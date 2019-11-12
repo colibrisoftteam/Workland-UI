@@ -1,0 +1,15 @@
+
+ .navbar-items-container {
+     font-weight: 400;
+     display: inline-flex;
+ }
+
+ .dashboard-nav {
+     background-color: #252f42;
+     height: 50px;
+     font-size: 1.2rem;
+ }
+
+ .navbar-items {
+     margin-right: 4rem;
+ }

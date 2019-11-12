@@ -1,0 +1,47 @@
+
+a {
+    color: #ffffff;
+}
+
+a:hover {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+ .main-nav {
+     background-color: #0f1723;
+     height: 60px;
+ }
+
+ .navbar-nav {
+     font-size: 1.8rem;
+     width: 100%;
+     text-decoration: none;
+     color: lightgray;
+     font-weight: 600;
+
+ }
+
+
+ .nav-profile {
+     font-size: 1.4rem;
+     margin-left: 7%;
+     margin-top: 0px;
+ }
+
+ .flag-container {
+     margin-left: 55%;
+     margin-bottom: 5px;
+ }
+
+ .usa-flag {
+     margin-bottom: 10px;
+     width: 40px;
+     height: 40px;
+ }
+
+
+ .russia-flag {
+     width: 30px;
+     height: 20px;
+ }
