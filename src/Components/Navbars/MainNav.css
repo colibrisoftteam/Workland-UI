@@ -25,23 +25,31 @@ a:hover {
 
  .nav-profile {
      font-size: 1.4rem;
-     margin-left: 7%;
-     margin-top: 0px;
+     margin-left: 5%;
+    justify-content: right;
+     cursor: pointer;
  }
 
  .flag-container {
-     margin-left: 55%;
+     margin-left: 50%;
      margin-bottom: 5px;
+     width: 100px;
+     cursor: pointer;
  }
 
- .usa-flag {
-     margin-bottom: 10px;
+ .flag {
+     margin-bottom: 0.5rem;
      width: 40px;
      height: 40px;
+     margin-right: 0.8rem;
  }
 
 
- .russia-flag {
-     width: 30px;
-     height: 20px;
+ .language {
+     font-size: 1.4rem;
+     font-weight: 400;
+     padding-bottom: 0.5rem;
+     margin-bottom: 20px;
+
+
  }

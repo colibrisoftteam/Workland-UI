@@ -1,1 +1,2 @@
 export const CHANGE_FLAG = "CHANGE_FLAG";
+export const CURRENT_SETTING = "CURRENT_SETTING";

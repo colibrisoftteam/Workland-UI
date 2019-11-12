@@ -1,0 +1,30 @@
+
+
+.settings-panel{
+    display: block;
+    margin-top: 4rem;
+
+}
+
+.settings-panel > button {
+    width: 100%;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    text-align: left;
+}
+
+.current-setting {
+    background-color: #5ea6fc;
+    color: #ffffff;
+}
+
+.active-setting {
+    background-color: #5ea6fc;
+    border: 1px solid #5ea6fc;
+}
+
+.unactive-setting {
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #ffffff;
+}

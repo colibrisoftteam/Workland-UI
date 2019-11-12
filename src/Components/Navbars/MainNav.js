@@ -7,11 +7,12 @@ import usa from "../../assets/images/usa.png";
 import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import russia from "../../assets/images/russia.png";
-//todo should add redux for flags
+
+
 class MainNav extends Component {
     render() {
         const flag =  this.props.flag ? russia : usa;
-        console.log(this.props.flag);
+        const flagName = this.props.flag ? "RU": "USA"
         return (
             <div className="main-nav">
                 <nav className="navbar navbar-expand-lg">
@@ -23,10 +24,11 @@ class MainNav extends Component {
                     <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
                         <div className="navbar-nav">
                             <div style={{marginLeft: "10rem", }}>
-                                <Link to={'#'}>Workland</Link>
+                                <Link to={'/'}>Workland</Link>
                             </div>
                             <div  onClick={this.props.changeFlag} className="flag-container">
-                                <img className="usa-flag" src={flag}  alt="USA/Russian Flags"/>
+                                <img className="flag" src={flag}  alt="USA/Russian Flags"/>
+                                <span style={{marginTop: "0px"}} className="language">{flagName}</span>
                             </div>
                             <div className="nav-profile">
                                 <Link to={'/profile'} >John Doe <Avatar/></Link>
