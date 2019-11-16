@@ -11,6 +11,8 @@
     border: 1px solid #ffffff;
     background-color: #ffffff;
     text-align: left;
+    display: block;
+
 }
 
 .current-setting {
@@ -19,11 +21,13 @@
 }
 
 .active-setting {
+    width: 100%;
     background-color: #5ea6fc;
     border: 1px solid #5ea6fc;
+    float: left;
 }
 
-.unactive-setting {
+.nonactive-setting {
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #ffffff;

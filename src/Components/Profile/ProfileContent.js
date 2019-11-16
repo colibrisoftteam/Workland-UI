@@ -15,8 +15,12 @@ const ProfileContent = () => {
                     <ProfilePhoto/>
                 </div>
                 <div className="photo-edit">
-                    <Remove/>
-                    <Edit/>
+                    <div>
+                        <Remove/>
+                    </div>
+                    <div>
+                        <Edit/>
+                    </div>
                 </div>
             </div>
             <form >

@@ -7,8 +7,10 @@ export const changeFlag = () => {
     }
 }
 
-export const currentSetting = () => {
+export const currentSetting = (payload) => {
+    console.log(payload)
     return {
-        type: CURRENT_SETTING
+        type: CURRENT_SETTING,
+        payload
     }
 }

@@ -1,23 +1,53 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import "./Profile.css"
-import { useDispatch, useSelector } from 'react-redux'
-import {CURRENT_SETTING} from "../../store/actions/actionTypes";
 import ProfileContent from './ProfileContent';
+import AboutSettings from "./AboutSettings";
+
+function currentSetting(setting){
+   if(setting==="profile"){
+       console.log("true");
+       return (
+           <div>
+               <ProfileContent/>
+           </div>
+       )
+   } else if(setting==="about") {
+       return (
+           <div>
+              <AboutSettings/>
+           </div>
+       );
+   }
+
+}
+
 
 const Profile = () => {
-    const dispatch = useDispatch();
-    const currentSetting = useSelector(state => state.currentSetting)
+    const [setting, setSetting] = useState("profile");
+    const [currentClass, setClass] = useState("nonactive-setting")
+
+    // useEffect(() => {
+    //     if(setting === "profile")
+    //
+    // });
+
     return (
         <div className="container">
             <div className="row justify-content-md-center">
                 <div className="col col-lg-3">
                     <div className="settings-panel">
-                        <button
-                            onClick={() => dispatch({type: CURRENT_SETTING})}
-                            className={currentSetting ? "active-setting" : "unactive-setting"}>
-                            Profile
-                        </button>
-                        <button>Settings About</button>
+                        <div onClick={() => setSetting("profile")}>
+                            <button
+                            className={`${setting === "profile" ? "active-setting" : "nonactive-setting"}`}>
+                                Profile
+                            </button>
+                        </div>
+                        <div  onClick={() => setSetting("about")}>
+                            <button
+                            className={`${setting === "about" ? "active-setting" : "nonactive-setting"}`}>
+                                Settings About
+                            </button>
+                        </div>
                         <button>Security</button>
                         <button>Skills</button>
                         <button>Type of payment</button>
@@ -25,7 +55,7 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className="col col-lg-9">
-                    <ProfileContent/>
+                    {currentSetting(setting)}
                 </div>
             </div>
         </div>
@@ -33,3 +63,4 @@ const Profile = () => {
 };
 
 export default Profile;
+
