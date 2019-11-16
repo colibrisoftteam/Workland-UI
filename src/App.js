@@ -19,15 +19,15 @@ class App extends Component {
                     <MainNav/>
                     <Navbar/>
                     <Route exact path={'/dashboard/search_order'} component={SearchOrder}/>
-                    <Route  path={'/dashboard/give_order'} component={GiveOrder}/>
-                    <Route  path={'/dashboard/projects'} component={MyProjects}/>
-                    <Route  path={'/dashboard/chat'} component={Chat}/>
+                    <Route path={'/dashboard/give_order'} component={GiveOrder}/>
+                    <Route path={'/dashboard/projects'} component={MyProjects}/>
+                    <Route path={'/dashboard/chat'} component={Chat}/>
                     <Route path={'/profile'} component={Profile}/>
                 </BrowserRouter>
 
             </div>
         );
     }
-}
 
+}
 export default App;

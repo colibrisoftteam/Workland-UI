@@ -1,8 +1,12 @@
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .settings-panel{
     display: block;
     margin-top: 4rem;
+    justify-content: space-around;
 
 }
 
@@ -21,14 +25,26 @@
 }
 
 .active-setting {
-    width: 100%;
+    width: 80%;
     background-color: #5ea6fc;
     border: 1px solid #5ea6fc;
-    float: left;
+    overflow: hidden;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: .6rem;
+    border-radius: 2px;
 }
 
 .nonactive-setting {
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #ffffff;
+    overflow: hidden;
+    font-weight: 600;
+    margin-bottom: .6rem;
+    border-radius: 2px;
+
 }
+
+
