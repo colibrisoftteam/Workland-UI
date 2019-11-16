@@ -1,14 +1,12 @@
-import React from 'react';
-import { BrowserRouter, Route } from "react-router-dom";
-import SignUp from './components/auth/signup/SignUp';
-import SignUpVer from './components/auth/signup/SignUpVer';
-import SignUpComplete from './components/auth/signup/SignUpComplete';
-import SignIn from './components/auth/signin/SignIn';
 import React, {Component} from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+import SignUp from './Components/auth/signup/SignUp';
+import SignUpVer from './Components/auth/signup/SignUpVer';
+import SignUpComplete from './Components/auth/signup/SignUpComplete';
+import SignIn from './Components/auth/signin/SignIn';
 import './App.css';
 import Navbar from "./Components/Navbars/Navbar";
 import MainNav from "./Components/Navbars/MainNav";
-import {BrowserRouter, Route} from "react-router-dom";
 import Profile from "./Components/Profile/Profile";
 import Chat from './Components/Dashboard/Chat';
 import MyProjects from './Components/Dashboard/MyProjects'
