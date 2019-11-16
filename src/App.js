@@ -1,3 +1,9 @@
+import React from 'react';
+import { BrowserRouter, Route } from "react-router-dom";
+import SignUp from './components/auth/signup/SignUp';
+import SignUpVer from './components/auth/signup/SignUpVer';
+import SignUpComplete from './components/auth/signup/SignUpComplete';
+import SignIn from './components/auth/signin/SignIn';
 import React, {Component} from 'react';
 import './App.css';
 import Navbar from "./Components/Navbars/Navbar";
@@ -22,8 +28,11 @@ class App extends Component {
                     <Route  path={'/dashboard/projects'} component={MyProjects}/>
                     <Route  path={'/dashboard/chat'} component={Chat}/>
                     <Route path={'/profile'} component={Profile}/>
+                    <Route path='/signup1' exact component={ SignUp } />
+                    <Route path='/signup2' component={ SignUpVer } />
+                    <Route path='/signup3' component={ SignUpComplete } />
+                    <Route path='/signin' component={ SignIn } />
                 </BrowserRouter>
-
             </div>
         );
     }
