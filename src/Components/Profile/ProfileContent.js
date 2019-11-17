@@ -7,7 +7,7 @@ import {ProfilePhoto, Edit, Remove} from '../../assets/icons/svg';
 
 const ProfileContent = () => {
     return (
-        <div className={"profile-content"}>
+        <div>
             <h3 style={{marginLeft: "2.5rem", marginTop: "3rem"}}>Profile</h3>
             <h5 style={{marginLeft: "2.5rem", marginTop: "1rem"}}>Profile Photo</h5>
             <div className="profile-photo">
@@ -70,8 +70,8 @@ const ProfileContent = () => {
                     <span>About yourself</span>
                     <br/>
                     <textarea
-                    className="profile-textarea"
-                    name="about">
+                        className="profile-textarea"
+                        name="about">
 
                     </textarea>
                     <br/>
@@ -84,12 +84,11 @@ const ProfileContent = () => {
                         placeholder="Password..."
                     />
                     <br/>
-                    <input
+                    <button
                         className="save-button"
                         type="submit"
                         name="saveButton"
-                        value="Save"
-                    />
+                    >Save</button>
                 </div>
             </form>
         </div>

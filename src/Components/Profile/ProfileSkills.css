@@ -1,0 +1,45 @@
+
+.skill-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.sub-titles {
+    margin-bottom: .4rem;
+    margin-top: 1rem;
+}
+
+.skills-setting {
+    margin-left: 2.5rem;
+    margin-top:4rem;
+    margin-bottom: 4rem;
+
+}
+
+.left-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.right-block {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.skill-inputs {
+    margin-bottom: .8rem;
+}
+
+.skills-button{
+    margin-top: 2.5rem;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #bababa;
+    background-color: #04bf10;
+    border-radius: 5px;
+    color: #ffffff;
+}

@@ -27,13 +27,14 @@
 .active-setting {
     width: 80%;
     background-color: #5ea6fc;
-    border: 1px solid #5ea6fc;
+
     overflow: hidden;
     text-align: left;
     color: #ffffff;
     font-weight: 600;
     margin-bottom: .6rem;
     border-radius: 2px;
+    border: 1px solid #5ea6fc;
 }
 
 .nonactive-setting {

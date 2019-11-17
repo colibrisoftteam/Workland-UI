@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useState} from 'react';
 import "./Profile.css"
 import ProfileContent from './ProfileContent';
 import AboutSettings from "./AboutSettings";
@@ -51,7 +51,7 @@ function currentSetting(setting){
 
 const Profile = () => {
     const [setting, setSetting] = useState("profile");
-    const [currentClass, setClass] = useState("nonactive-setting")
+   // const [currentClass, setClass] = useState("nonactive-setting")
 
     return (
         <div className="container">
@@ -97,7 +97,10 @@ const Profile = () => {
                     </div>
                 </div>
                 <div className="col col-lg-9">
-                    {currentSetting(setting)}
+                    <div className="profile-content">
+                        {currentSetting(setting)}
+                    </div>
+
                 </div>
             </div>
         </div>
