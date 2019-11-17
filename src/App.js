@@ -8,6 +8,10 @@ import Chat from './Components/Dashboard/Chat';
 import MyProjects from './Components/Dashboard/MyProjects'
 import SearchOrder from './Components/Dashboard/SearchOrder';
 import GiveOrder from './Components/Dashboard/GiveOrder';
+import SignIn from "./Components/auth/signin/SignIn";
+import SignUp from "./Components/auth/signup/SignUp";
+import SignUpVer from "./Components/auth/signup/SignUpVer";
+import SignUpComplete from "./Components/auth/signup/SignUpComplete";
 
 
 
@@ -23,6 +27,10 @@ class App extends Component {
                     <Route path={'/dashboard/projects'} component={MyProjects}/>
                     <Route path={'/dashboard/chat'} component={Chat}/>
                     <Route path={'/profile'} component={Profile}/>
+                    <Route path='/signup1' exact component={ SignUp } />
+                    <Route path='/signup2' component={ SignUpVer } />
+                    <Route path='/signup3' component={ SignUpComplete } />
+                    <Route path='/signin' component={ SignIn } />
                 </BrowserRouter>
 
             </div>
