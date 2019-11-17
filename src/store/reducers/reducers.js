@@ -1,11 +1,15 @@
 import {CHANGE_FLAG, CURRENT_SETTING} from "../actions/actionTypes";
 
 
-const initialState =  {
-    flag : true,
-    currentSetting: false
+const initialState = {
+    flag: true,
+    profile: false,
+    about: false,
+    security: false,
+    skills: false,
+    payment: false,
+    deleteAccount: false
 }
-
 
 
 export default function rootReducer(state=initialState, action) {
@@ -15,8 +19,7 @@ export default function rootReducer(state=initialState, action) {
 
 
         case CURRENT_SETTING:
-            console.log("clicked");
-            return  {...state, currentSetting: true}
+            return  false;
 
 
         default:

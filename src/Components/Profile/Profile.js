@@ -1,31 +1,106 @@
-import React from 'react';
+import React, {useState} from 'react';
 import "./Profile.css"
-import { useDispatch, useSelector } from 'react-redux'
-import {CURRENT_SETTING} from "../../store/actions/actionTypes";
 import ProfileContent from './ProfileContent';
+import AboutSettings from "./AboutSettings";
+import ProfileSecurity from "./ProfileSecurity";
+import ProfileSkills from "./ProfileSkills";
+import ProfilePayment from "./ProfilePayment";
+import DeleteAccount from "./DeleteAccount";
+
+function currentSetting(setting){
+   if(setting==="profile"){
+       return (
+           <div>
+               <ProfileContent/>
+           </div>
+       )
+   } else if(setting==="about") {
+       return (
+           <div>
+              <AboutSettings/>
+           </div>
+       );
+   } else if(setting==="security") {
+       return (
+           <div>
+               <ProfileSecurity/>
+           </div>
+       );
+   } else if(setting==="skills") {
+       return (
+           <div>
+               <ProfileSkills/>
+           </div>
+       );
+   } else if(setting==="payment") {
+       return (
+           <div>
+               <ProfilePayment/>
+           </div>
+       );
+   } else  {
+       return (
+           <div>
+               <DeleteAccount/>
+           </div>
+       );
+   }
+
+}
+
 
 const Profile = () => {
-    const dispatch = useDispatch();
-    const currentSetting = useSelector(state => state.currentSetting)
+    const [setting, setSetting] = useState("profile");
+   // const [currentClass, setClass] = useState("nonactive-setting")
+
     return (
         <div className="container">
             <div className="row justify-content-md-center">
                 <div className="col col-lg-3">
                     <div className="settings-panel">
-                        <button
-                            onClick={() => dispatch({type: CURRENT_SETTING})}
-                            className={currentSetting ? "active-setting" : "unactive-setting"}>
-                            Profile
-                        </button>
-                        <button>Settings About</button>
-                        <button>Security</button>
-                        <button>Skills</button>
-                        <button>Type of payment</button>
-                        <button>Delete Account</button>
+                        <div onClick={() => setSetting("profile")}>
+                            <button
+                            className={`${setting === "profile" ? "active-setting" : "nonactive-setting"}`}>
+                                Profile
+                            </button>
+                        </div>
+                        <div  onClick={() => setSetting("about")}>
+                            <button
+                            className={`${setting === "about" ? "active-setting" : "nonactive-setting"}`}>
+                                Settings About
+                            </button>
+                        </div>
+                        <div onClick={() => setSetting("security")}>
+                            <button
+                            className={`${setting === "security" ? "active-setting" : "nonactive-setting"}`}>
+                                Security
+                            </button>
+                        </div>
+                        <div onClick={() => setSetting("skills")}>
+                            <button
+                                className={`${setting === "skills" ? "active-setting" : "nonactive-setting"}`}>
+                                Skills
+                            </button>
+                        </div>
+                        <div onClick={() => setSetting("payment")}>
+                            <button
+                                className={`${setting === "payment" ? "active-setting" : "nonactive-setting"}`}>
+                                Type of Payment
+                            </button>
+                        </div>
+                        <div onClick={() => setSetting("delete")}>
+                            <button
+                                className={`${setting === "delete" ? "active-setting" : "nonactive-setting"}`}>
+                                Delete Account
+                            </button>
+                        </div>
                     </div>
                 </div>
                 <div className="col col-lg-9">
-                    <ProfileContent/>
+                    <div className="profile-content">
+                        {currentSetting(setting)}
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -33,3 +108,4 @@ const Profile = () => {
 };
 
 export default Profile;
+

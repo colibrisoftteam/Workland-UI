@@ -1,0 +1,51 @@
+
+
+.security-title {
+    margin: 3rem 0 1.5rem 2.5rem;
+}
+
+.security-pin {
+    width: 45%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-left: 2.5rem;
+    margin-top: 1.4rem;
+    justify-content: space-around;
+}
+
+span {
+    font-weight: 600;
+}
+
+.security-pin > span {
+    margin-bottom: 1rem;
+}
+
+.security-input {
+    background-color: #ffffff;
+    border-radius: 5px;
+    height: 36px;
+    border: 1px solid #bababa;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+}
+
+.security-button {
+   margin-left: 0;
+    margin-bottom: 4rem;
+    width: 200px;
+    height: 40px;
+    border: 1px solid #bababa;
+    background-color: #04bf10;
+    border-radius: 5px;
+    color: #ffffff;
+}
+
+.double-auth {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 2.5rem;
+    width: 45%;
+}

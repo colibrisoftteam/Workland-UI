@@ -1,8 +1,12 @@
 
+::-webkit-scrollbar {
+    display: none;
+}
 
 .settings-panel{
     display: block;
     margin-top: 4rem;
+    justify-content: space-around;
 
 }
 
@@ -11,6 +15,8 @@
     border: 1px solid #ffffff;
     background-color: #ffffff;
     text-align: left;
+    display: block;
+
 }
 
 .current-setting {
@@ -19,12 +25,27 @@
 }
 
 .active-setting {
+    width: 80%;
     background-color: #5ea6fc;
+
+    overflow: hidden;
+    text-align: left;
+    color: #ffffff;
+    font-weight: 600;
+    margin-bottom: .6rem;
+    border-radius: 2px;
     border: 1px solid #5ea6fc;
 }
 
-.unactive-setting {
+.nonactive-setting {
     background-color: #ffffff;
     color: #000000;
     border: 1px solid #ffffff;
+    overflow: hidden;
+    font-weight: 600;
+    margin-bottom: .6rem;
+    border-radius: 2px;
+
 }
+
+
