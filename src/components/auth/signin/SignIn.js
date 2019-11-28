@@ -3,7 +3,7 @@ import '../styles/styles.css';
 
 function SignIn() {
   return (
-    <div className="container">
+    <div className="container"> 
     <div className="wrapper">
     <form className="form-signin">       
       <h2 className="form-signin-heading">Войти</h2>
@@ -20,7 +20,7 @@ function SignIn() {
         <br />
       <button className="btn btn-success btn-block" type="submit">Войти</button>
       <br />  
-      <p className="align-center"><a href="#">Восстановить пароль</a></p> 
+      <p className="align-center"><a className="link-color" href="#">Восстановить пароль</a></p> 
       <p className="align-center">Нет учётной записи? <a href="#">Зарегистрируйтесь</a></p> 
     </form>
     </div>

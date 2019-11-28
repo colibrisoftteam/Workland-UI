@@ -1,6 +1,9 @@
 *{
     box-shadow: none !important;
   }
+  .link-color{
+    color: black !important;
+  }
 body {
     background: #eee !important;
 }

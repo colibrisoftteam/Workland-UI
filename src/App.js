@@ -16,7 +16,6 @@ import SignUpComplete from "./Components/auth/signup/SignUpComplete";
 
 
 
-
 class App extends Component {
     render() {
         return (
@@ -29,11 +28,10 @@ class App extends Component {
                     <Route path={'/dashboard/projects'} component={MyProjects} />
                     <Route path={'/dashboard/chat'} component={Chat} />
                     <Route path={'/profile'} component={Profile} />
-                    <Route path='/signup1' exact component={SignUp} />
+                    <Route path='/signup1' component={SignUp} />
                     <Route path='/signup2' component={SignUpVer} />
                     <Route path='/signup3' component={SignUpComplete} />
                     <Route path='/signin' component={SignIn} />
-                    
 
                 </BrowserRouter>
 
