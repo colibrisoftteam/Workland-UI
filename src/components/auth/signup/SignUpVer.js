@@ -18,7 +18,9 @@ function SignUpVer() {
       <br />
       <button className="btn btn-success btn-block" type="submit">Отправить</button>
       <br />  
-      <p className="align-center"><a href="#">Отправить письмо обратно</a></p>
+      <p className="align-center">
+        <a className="auth-urls" href="#">Отправить письмо обратно</a>
+      </p>
     </form>
     </div>
     </div>

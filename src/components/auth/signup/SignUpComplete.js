@@ -15,7 +15,11 @@ function SignUpComplete() {
        <br />
       <button className="btn btn-success btn-block" type="submit">Присоединиться</button>
       <br />  
-      <p>Регистрируясь, вы подтверждаете, что принимаете <a href="#">Условия использования</a> и <a href="#">Политику конфиденциальности</a></p> 
+      <p>Регистрируясь, вы подтверждаете, что принимаете
+          <a className="auth-urls" href="#">Условия использования</a>
+          и
+          <a className="auth-urls" href="#">Политику конфиденциальности</a>
+      </p>
     </form>
     </div>
     </div>

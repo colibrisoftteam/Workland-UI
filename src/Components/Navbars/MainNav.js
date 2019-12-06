@@ -10,9 +10,30 @@ import russia from "../../assets/images/russia.png";
 
 
 class MainNav extends Component {
+    constructor(props) {
+        super(props);
+
+        this.state = {
+            dropDown: false
+        }
+    }
+
+    dropDown = () => {
+        return (
+            <div className="profile-dropDown">
+                <div className="dropDown-item">Profile</div>
+                <div className="dropDown-item">Settings</div>
+                <div className="dropDown-item">Payment</div>
+                <div className="dropDown-item">Help</div>
+                <div className="dropDown-item">Exit</div>
+            </div>
+        )
+    }
+
     render() {
         const flag =  this.props.flag ? russia : usa;
-        const flagName = this.props.flag ? "RU": "USA"
+        const flagName = this.props.flag ? "RU": "USA";
+
         return (
             <div className="main-nav">
                 <nav className="navbar navbar-expand-lg">
@@ -30,8 +51,13 @@ class MainNav extends Component {
                                 <img className="flag" src={flag}  alt="USA/Russian Flags"/>
                                 <span style={{marginTop: "0px"}} className="language">{flagName}</span>
                             </div>
-                            <div className="nav-profile">
-                                <Link to={'/profile'} >John Doe <Avatar/></Link>
+                            <div
+                                onClick={() => {this.setState({dropDown: !this.state.dropDown})}}
+                                className="nav-profile">
+                                <Link to={'/profile/profile'} >John Doe <Avatar/></Link>
+                                <div>
+                                    {this.state.dropDown && this.dropDown()}
+                                </div>
                             </div>
 
                         </div>

@@ -11,7 +11,7 @@ function SignUp() {
         <br />
       <button className="btn btn-success btn-block" type="submit">Отправить</button>
       <br />  
-      <p className="align-center">Уже зарегистрированы? <a href="#">Войти</a></p> 
+      <p className="align-center">Уже зарегистрированы? <a className="auth-urls" href="#">Войти</a></p>
     </form>
     </div>
     </div>

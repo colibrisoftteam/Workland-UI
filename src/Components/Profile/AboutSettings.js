@@ -55,6 +55,7 @@ const AboutSettings = () => {
                 <br/>
                     <select className="about-input" name="city">
                         <option>New York</option>
+                        <option>New York</option>
                         <option>Tashkent</option>
                         <option>Moscow</option>
                     </select>
