@@ -29,10 +29,10 @@ class MainNav extends Component {
                     <Link to={'/payment'}>Payment</Link>
                 </div>
                 <div className="dropDown-item">
-                    <Link to={'help'}>Help</Link>
+                    <Link to={'/help'}>Help</Link>
                 </div>
                 <div className="dropDown-item">
-                    <Link>Exit</Link>
+                    <Link to={'/exit'}>Exit</Link>
                 </div>
             </div>
         )
