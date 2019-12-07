@@ -3,8 +3,10 @@ import React from 'react';
 const GiveOrder = () => {
     return (
         <div>
-            Give order
+            Give order to 
         </div>
+        
+        
     );
 };
 
