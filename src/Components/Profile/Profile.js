@@ -1,57 +1,67 @@
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import "./Profile.css"
 import ProfileContent from './ProfileContent';
 import AboutSettings from "./AboutSettings";
 import ProfileSecurity from "./ProfileSecurity";
 import ProfileSkills from "./ProfileSkills";
 import ProfilePayment from "./ProfilePayment";
+import TaskCard from "./TaskCard";
 import DeleteAccount from "./DeleteAccount";
 
-function currentSetting(setting){
-   if(setting==="profile"){
-       return (
-           <div>
-               <ProfileContent/>
-           </div>
-       )
-   } else if(setting==="about") {
-       return (
-           <div>
-              <AboutSettings/>
-           </div>
-       );
-   } else if(setting==="security") {
-       return (
-           <div>
-               <ProfileSecurity/>
-           </div>
-       );
-   } else if(setting==="skills") {
-       return (
-           <div>
-               <ProfileSkills/>
-           </div>
-       );
-   } else if(setting==="payment") {
-       return (
-           <div>
-               <ProfilePayment/>
-           </div>
-       );
-   } else  {
-       return (
-           <div>
-               <DeleteAccount/>
-           </div>
-       );
-   }
+
+function currentSetting(setting) {
+    if (setting === "profile") {
+        return (
+            <div>
+                <ProfileContent />
+            </div>
+        )
+    } else if (setting === "about") {
+        return (
+            <div>
+                <AboutSettings />
+            </div>
+        );
+    } else if (setting === "security") {
+        return (
+            <div>
+                <ProfileSecurity />
+            </div>
+        );
+    } else if (setting === "skills") {
+        return (
+            <div>
+                <ProfileSkills />
+            </div>
+        );
+    } else if (setting === "payment") {
+        return (
+            <div>
+                <ProfilePayment />
+            </div>
+        );
+    } else if (setting === "task") {
+        return (
+            <div>
+                <TaskCard />
+            </div>
+        );
+    }
+
+    else {
+        return (
+            <div>
+                <DeleteAccount />
+            </div>
+        );
+    }
 
 }
 
 
 const Profile = () => {
     const [setting, setSetting] = useState("profile");
-   // const [currentClass, setClass] = useState("nonactive-setting")
+    // const [currentClass, setClass] = useState("nonactive-setting")
 
     return (
         <div className="container">
@@ -60,19 +70,19 @@ const Profile = () => {
                     <div className="settings-panel">
                         <div onClick={() => setSetting("profile")}>
                             <button
-                            className={`${setting === "profile" ? "active-setting" : "nonactive-setting"}`}>
+                                className={`${setting === "profile" ? "active-setting" : "nonactive-setting"}`}>
                                 Profile
                             </button>
                         </div>
-                        <div  onClick={() => setSetting("about")}>
+                        <div onClick={() => setSetting("about")}>
                             <button
-                            className={`${setting === "about" ? "active-setting" : "nonactive-setting"}`}>
+                                className={`${setting === "about" ? "active-setting" : "nonactive-setting"}`}>
                                 Settings About
                             </button>
                         </div>
                         <div onClick={() => setSetting("security")}>
                             <button
-                            className={`${setting === "security" ? "active-setting" : "nonactive-setting"}`}>
+                                className={`${setting === "security" ? "active-setting" : "nonactive-setting"}`}>
                                 Security
                             </button>
                         </div>
@@ -86,6 +96,12 @@ const Profile = () => {
                             <button
                                 className={`${setting === "payment" ? "active-setting" : "nonactive-setting"}`}>
                                 Type of Payment
+                            </button>
+                        </div>
+                        <div onClick={() => setSetting("task")}>
+                            <button
+                                className={`${setting === "task" ? "active-setting" : "nonactive-setting"}`}>
+                                TaskCard
                             </button>
                         </div>
                         <div onClick={() => setSetting("delete")}>
