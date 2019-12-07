@@ -32,7 +32,7 @@ class MainNav extends Component {
                     <Link to={'/help'}>Help</Link>
                 </div>
                 <div className="dropDown-item">
-                    <Link>Exit</Link>
+                    <Link to={'/exit'}>Exit</Link>
                 </div>
             </div>
         )
