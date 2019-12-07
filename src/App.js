@@ -3,7 +3,7 @@ import './App.css';
 import Navbar from "./Components/Navbars/Navbar";
 import MainNav from "./Components/Navbars/MainNav";
 import { Route, Switch} from "react-router-dom";
-import Profile from "./Components/Profile/Profile";
+import Profile from "./Components/Settings/Profile";
 import Chat from './Components/Dashboard/Chat';
 import MyProjects from './Components/Dashboard/MyProjects'
 import SearchOrder from './Components/Dashboard/SearchOrder';
@@ -12,9 +12,9 @@ import SignIn from "./Components/auth/signin/SignIn";
 import SignUp from "./Components/auth/signup/SignUp";
 import SignUpVer from "./Components/auth/signup/SignUpVer";
 import SignUpComplete from "./Components/auth/signup/SignUpComplete";
-import AboutSettings from "./Components/Profile/AboutSettings";
-import ProfilePayment from "./Components/Profile/ProfilePayment";
-import Help from "./Components/Profile/Help";
+import AboutSettings from "./Components/Settings/AboutSettings";
+import ProfilePayment from "./Components/Settings/ProfilePayment";
+import Help from "./Components/Help/Help";
 
 
 class App extends Component {
@@ -32,8 +32,8 @@ class App extends Component {
                     <Route path={'/dashboard/give_order'} component={GiveOrder}/>
                     <Route path={'/dashboard/projects'} component={MyProjects}/>
                     <Route path={'/dashboard/chat'} component={Chat}/>
-                    <Route path={'/profile'} component={Profile}/>
-                    <Route path={'/settings'} component={AboutSettings}/>
+                    <Route path={'/profile'} component={AboutSettings}/>
+                    <Route path={'/settings'} component={Profile}/>
                     <Route path={'/payment'} component={ProfilePayment}/>
                     <Route path={'/help'} component={Help}/>
                 </Switch>

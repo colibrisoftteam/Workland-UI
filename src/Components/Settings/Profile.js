@@ -5,10 +5,9 @@ import ProfileSecurity from "./ProfileSecurity";
 import ProfileSkills from "./ProfileSkills";
 import ProfilePayment from "./ProfilePayment";
 import DeleteAccount from "./DeleteAccount";
-import Portfolio from "./Portfolio/Portfolio";
+import Portfolio from "../Profile/Portfolio/Portfolio";
 import {Switch, Route} from "react-router-dom";
 import "./Profile.css"
-import NewProject from "./Portfolio/NewProject";
 
 const Profile = (props) => {
     const [active, setRoute] = useState("");
@@ -23,7 +22,7 @@ const Profile = (props) => {
 
     function routeSettings (route){
         props.history.push(`/profile/profile/${route}`);
-
+        console.log("here");
         setRoute({
             active: route
         })
@@ -69,15 +68,6 @@ const Profile = (props) => {
                             </button>
                         </div>
 
-                        <div onClick={() => routeSettings("portfolio")} >
-                            <button
-                                className={`${active === "portfolio" ? "active-setting" : "nonactive-setting"}`}
-
-                            >
-                                Portfolio
-                            </button>
-                        </div>
-
                         <div onClick={() => routeSettings("delete")}>
                             <button
                                 className={`${active === "delete" ? "active-setting" : "nonactive-setting"}`}>
@@ -89,15 +79,7 @@ const Profile = (props) => {
 
                 <div className="col col-lg-9">
                     <div className="profile-content">
-                        <Switch>
-                            <Route exact path={'/profile/profile'} component={ProfileContent}/>
-                            <Route  path={'/profile/profile/about'} component={AboutSettings} />
-                            <Route path={'/profile/profile/security'} component={ProfileSecurity} />
-                            <Route path={'/profile/profile/skills'} component={ProfileSkills} />
-                            <Route path={'/profile/profile/payment'} component={ProfilePayment} />
-                            <Route path={'/profile/profile/portfolio'} component={Portfolio} />
-                            <Route path={'/profile/profile/delete'} component={DeleteAccount} />
-                        </Switch>
+
                     </div>
                 </div>
             </div>
