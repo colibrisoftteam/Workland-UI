@@ -8,24 +8,32 @@ import {bindActionCreators} from "redux";
 import {connect} from "react-redux";
 import russia from "../../assets/images/russia.png";
 
-
 class MainNav extends Component {
     constructor(props) {
         super(props);
-
         this.state = {
             dropDown: false
         }
     }
 
-    dropDown = () => {
+    dropDown(){
         return (
             <div className="profile-dropDown">
-                <div className="dropDown-item">Profile</div>
-                <div className="dropDown-item">Settings</div>
-                <div className="dropDown-item">Payment</div>
-                <div className="dropDown-item">Help</div>
-                <div className="dropDown-item">Exit</div>
+                <div className="dropDown-item">
+                    <Link to={'/profile'}>Profile</Link>
+                </div>
+                <div className="dropDown-item">
+                    <Link to={'/settings'}>Settings</Link>
+                </div>
+                <div className="dropDown-item">
+                    <Link to={'/payment'}>Payment</Link>
+                </div>
+                <div className="dropDown-item">
+                    <Link to={'help'}>Help</Link>
+                </div>
+                <div className="dropDown-item">
+                    <Link>Exit</Link>
+                </div>
             </div>
         )
     }
@@ -54,7 +62,7 @@ class MainNav extends Component {
                             <div
                                 onClick={() => {this.setState({dropDown: !this.state.dropDown})}}
                                 className="nav-profile">
-                                <Link to={'/profile/profile'} >John Doe <Avatar/></Link>
+                                John Doe <Avatar/>
                                 <div>
                                     {this.state.dropDown && this.dropDown()}
                                 </div>

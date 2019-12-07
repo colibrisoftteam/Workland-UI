@@ -67,4 +67,10 @@ a:hover {
 
  .dropDown-item {
      background-color: #ffffff;
+     color: #000000;
  }
+
+ .dropDown-item > a {
+     color: #000000;
+ }
+
