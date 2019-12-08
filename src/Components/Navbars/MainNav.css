@@ -55,12 +55,12 @@ a:hover {
      position: absolute;
      font-weight: 300;
      color: #000000;
-     z-index: 1;
      display: flex;
+     z-index: 5;
      flex-direction: column;
      font-size: 16px;
-     box-shadow:  37px 20px 53px -30px #a6a6a6;
-     border: 1px solid #a6a6a6;
+     box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+     border: 1px solid #bababa;
      background-color: #ffffff;
      width: 140px;
  }
@@ -68,6 +68,9 @@ a:hover {
  .dropDown-item {
      background-color: #ffffff;
      color: #000000;
+     font-weight: 400;
+     border-bottom: 1px solid #bababa;
+     padding-left: .7rem;
  }
 
  .dropDown-item > a {

@@ -23,7 +23,7 @@ class MainNav extends Component {
                     <Link to={'/profile'}>Profile</Link>
                 </div>
                 <div className="dropDown-item">
-                    <Link to={'/settings'}>Settings</Link>
+                    <Link to={'/settings/profile'}>Settings</Link>
                 </div>
                 <div className="dropDown-item">
                     <Link to={'/payment'}>Payment</Link>

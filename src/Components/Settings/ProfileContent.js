@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ProfileContent.css";
-import {ProfilePhoto, Edit, Remove} from '../../assets/icons/svg';
+import {ProfilePhoto, Edit, Remove, Stars} from '../../assets/icons/svg';
 
 
 
@@ -23,7 +23,7 @@ const ProfileContent = () => {
                     </div>
                 </div>
             </div>
-            <form >
+            <div >
                 <div className="profile-forms">
                     <div style={{width: "50%"}}>
                         <span>Name</span>
@@ -90,7 +90,10 @@ const ProfileContent = () => {
                         name="saveButton"
                     >Save</button>
                 </div>
-            </form>
+            </div>
+            <div>
+                <Stars/>
+            </div>
         </div>
     );
 };

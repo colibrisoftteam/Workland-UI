@@ -30,8 +30,9 @@
 
 }
 
-.skill-inputs {
-    margin-bottom: .8rem;
+.check-input {
+    margin-bottom: .7rem;
+    margin-right: .6rem;
 }
 
 .skills-button{
@@ -42,4 +43,37 @@
     background-color: #04bf10;
     border-radius: 5px;
     color: #ffffff;
+}
+
+.choosed-skills{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.skill1 {
+    border: 1px solid #5ea6fc;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #5ea6fc;
+    width: 200px;
+    height: 30px;
+    padding-left: .6rem;
+    padding-top: .1rem;
+}
+
+.add-new-skill{
+    background-color: #04bf10;
+    border-radius: 4px;
+    border: 1px solid #04bf10;
+    width: 35px;
+    height: 35px;
+}
+
+.skill-adder {
+    border: 1px solid #bababa;
+    border-radius: 5px;
+    height: 35px;
+    width: 280px;
+    padding-left: .5rem;
+    margin-top: 1rem;
 }

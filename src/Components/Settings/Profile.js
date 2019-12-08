@@ -10,22 +10,12 @@ import {Switch, Route} from "react-router-dom";
 import "./Profile.css"
 
 const Profile = (props) => {
-    const [active, setRoute] = useState("");
-    const [dropDown, setDropDown] = useState(false);
-
-
-    function toggleDropDown (){
-        setDropDown({
-            dropDown: !dropDown
-        })
-    }
+    const [active, setRoute] = useState("profile");
 
     function routeSettings (route){
-        props.history.push(`/profile/profile/${route}`);
-        console.log("here");
-        setRoute({
-            active: route
-        })
+        props.history.push(`/settings/${route}`);
+
+        setRoute(route);
     }
 
     return (
@@ -33,7 +23,7 @@ const Profile = (props) => {
             <div className="row justify-content-md-center">
                 <div className="col col-lg-3">
                     <div className="settings-panel">
-                        <div onClick={() => routeSettings("")}>
+                        <div onClick={() => routeSettings("profile")}>
                             <button
                                 className={`${active === "profile" ? "active-setting" : "nonactive-setting"}`}>
                                 Profile
@@ -79,7 +69,15 @@ const Profile = (props) => {
 
                 <div className="col col-lg-9">
                     <div className="profile-content">
-
+                        <Switch>
+                            <Route  path={'/settings/profile'} component={ProfileContent}/>
+                            <Route  path={'/settings/about'} component={AboutSettings} />
+                            <Route path={'/settings/security'} component={ProfileSecurity} />
+                            <Route path={'/settings/skills'} component={ProfileSkills} />
+                            <Route path={'/settings/payment'} component={ProfilePayment} />
+                            <Route path={'/settings/portfolio'} component={Portfolio} />
+                            <Route path={'/settings/delete'} component={DeleteAccount} />
+                        </Switch>
                     </div>
                 </div>
             </div>
