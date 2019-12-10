@@ -59,7 +59,7 @@ export const Remove = () => (
     </svg>
 )
 export const Stars = () => (
-    <svg width="30px"  height="30px" viewBox="0 0 501.28 501.28" >
+    <svg width="14px"  height="14px" viewBox="0 0 501.28 501.28" >
         <g>
           <polygon
           fill="#FFCD00"

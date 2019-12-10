@@ -1,18 +1,20 @@
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import ProfileContent from './ProfileContent';
 import AboutSettings from "./AboutSettings";
 import ProfileSecurity from "./ProfileSecurity";
 import ProfileSkills from "./ProfileSkills";
 import ProfilePayment from "./ProfilePayment";
+import TaskCard from "./TaskCard";
+import TasksView from "./TasksView"
 import DeleteAccount from "./DeleteAccount";
 import Portfolio from "../Profile/Portfolio/Portfolio";
-import {Switch, Route} from "react-router-dom";
+import { Switch, Route } from "react-router-dom";
 import "./Profile.css"
 
 const Profile = (props) => {
     const [active, setRoute] = useState("profile");
 
-    function routeSettings (route){
+    function routeSettings(route) {
         props.history.push(`/settings/${route}`);
 
         setRoute(route);
@@ -30,7 +32,7 @@ const Profile = (props) => {
                             </button>
                         </div>
 
-                        <div  onClick={() => routeSettings("about")}>
+                        <div onClick={() => routeSettings("about")}>
                             <button
                                 className={`${active === "about" ? "active-setting" : "nonactive-setting"}`}>
                                 Settings About
@@ -58,6 +60,19 @@ const Profile = (props) => {
                             </button>
                         </div>
 
+                        <div onClick={() => routeSettings("task")}>
+                            <button
+                                className={`${active === "task" ? "active-setting" : "nonactive-setting"}`}>
+                                Task Card
+                            </button>
+                        </div>
+                        <div onClick={() => routeSettings("tasksview")}>
+                            <button
+                                className={`${active === "tasksview" ? "active-setting" : "nonactive-setting"}`}>
+                                Tasks View
+                            </button>
+                        </div>
+
                         <div onClick={() => routeSettings("delete")}>
                             <button
                                 className={`${active === "delete" ? "active-setting" : "nonactive-setting"}`}>
@@ -70,12 +85,14 @@ const Profile = (props) => {
                 <div className="col col-lg-9">
                     <div className="profile-content">
                         <Switch>
-                            <Route  path={'/settings/profile'} component={ProfileContent}/>
-                            <Route  path={'/settings/about'} component={AboutSettings} />
+                            <Route path={'/settings/profile'} component={ProfileContent} />
+                            <Route path={'/settings/about'} component={AboutSettings} />
                             <Route path={'/settings/security'} component={ProfileSecurity} />
                             <Route path={'/settings/skills'} component={ProfileSkills} />
                             <Route path={'/settings/payment'} component={ProfilePayment} />
                             <Route path={'/settings/portfolio'} component={Portfolio} />
+                            <Route path={'/settings/task'} component={TaskCard} />
+                            <Route path={'/settings/tasksview'} component={TasksView} />
                             <Route path={'/settings/delete'} component={DeleteAccount} />
                         </Switch>
                     </div>

@@ -1,0 +1,228 @@
+.TaskView-title{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    margin-top:2rem;
+    font-size:1.3rem;
+    color:rgb(58,58,58);
+   }
+   .TaskView-subtitle{
+    display:flex;
+    justify-content:center;
+    text-align:center;
+    font-size:1.1rem;
+    margin-top:1rem;
+    color: rgb(78, 78, 78);
+   }
+   .TaskView-subtitle2{
+    display:flex;
+    justify-content:center;
+    text-align: center;
+    margin-top:1rem;
+    font-size:1.1rem;
+    color: rgb(58, 58, 58);
+    
+   }
+   .line{
+    border:0.5px solid rgb(163, 163, 163);
+    margin-left:2rem;
+    margin-right:2rem;
+    margin-top:2rem;
+   }
+
+   .pr-photo{
+       width:1rem;
+       height:1px; 
+       margin-left: 1rem;
+       margin-top: 1rem;
+   }
+   .viewborder{
+    margin-bottom:1rem;
+    margin-left:1rem; 
+   }
+   .viewprofilinfo{
+       margin-bottom:1rem;
+     
+   }
+   .viewoffers {
+     display: flex;
+     justify-content: center;
+     margin: 0.1rem 10rem 1rem 13rem;
+   }
+   .viewdetail{
+       font-size: 17px;
+       margin-right:2rem;
+       color:rgb(78, 78, 78);
+       border:12px solid rgb(255, 255, 255);
+       padding:4px;
+   }
+   .viewdetail:hover{
+       background-color:rgb(1, 141, 1);
+       border-radius:15px;
+       color:white;     
+   }
+   .viewpredlojeniya{
+       font-size:17px;
+       margin-right:2rem;
+       color: rgb(78, 78, 78);
+       border:12px solid #fffefe;
+       padding:4px;
+       
+   }
+   .viewpredlojeniya:hover{
+       background-color:rgb(1, 141, 1);
+       border-radius:15px;
+       color:white;
+   }
+   .name2{
+       color:rgb(94, 92, 92);
+   }
+   .ratingfrilansers{
+       margin-left:10%;
+      margin-bottom:1rem;
+   }
+   
+   .rating {
+       margin-bottom: 10px;
+       width: 200px;
+       cursor: pointer;
+   }
+   
+   
+   .starnumber {
+       font-size: 0.8rem;
+       font-weight: 500;
+       margin-top:0.5rem;
+       
+   }
+   .money {
+       display: flex;
+       width:100%;
+       font-size:15px;
+       font-weight:700;
+       margin-left:2%;
+       margin-bottom:10px;
+   }
+ 
+   .deadline {
+    display: flex;
+    width:100%;
+    font-size:15px;
+    font-weight:700;
+    margin-left:2%;
+}
+   .skills{
+       display:flex;
+       width:90%;
+       font-size:12px;
+       font-weight: 400;
+       margin-left:2%;
+       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       color:rgb(94, 92, 92);
+   }
+   .doctype{
+    display:flex;
+    width:90%;
+    font-size:12px;
+    font-weight: 400;
+    margin-left:2%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:rgb(46, 121, 196);
+}
+   .viewcategory {
+       display: flex;
+       justify-content: space-between;
+       margin: 1rem 31rem 0.5rem 1rem;
+     }
+    
+   .veb {
+       font-size: 12px;
+       color:rgb(94, 92, 92);
+       font-weight: 400;
+       border:1px solid rgb(150, 155, 150);
+       padding:4px;
+       border-radius:4px;
+   
+   }
+   .veb2:hover{
+       background-color:rgb(255, 255, 255);
+       border-radius:4px;
+       color:rgb(90, 205, 94);
+       border:1px solid rgb(90, 205, 94);
+       cursor: pointer;
+   }
+   .front{
+       font-size: 13px;
+       color:rgb(94, 92, 92);
+       font-weight: 400;
+       border:1px solid rgb(150, 155, 150);
+       padding:4px;
+       border-radius:4px;
+   
+   }
+   .front:hover{
+       background-color:rgb(255, 255, 255);
+       border-radius:4px;
+       color:rgb(64, 180, 250);
+       border:1px solid rgb(64, 180, 250);
+       cursor: pointer;
+        
+   }
+   .описание{
+    margin-left:2rem; 
+   }
+   .описание h5{
+      font-size:15px;
+      
+      font-weight: 700;
+   }
+   .бордерописание{
+    margin:1rem 2rem 2rem 0rem;
+    height:7rem;
+    border:1px solid rgb(173, 185, 173);
+    padding:4px;
+    border-radius:4px;
+   }
+   .Срок,.Денги{
+    display: flex;
+    width:100%;
+    font-size:15px;
+    font-weight:700;
+    margin-bottom:10px;
+}
+.viewcategory2,.viewcategory3 {
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 31rem 0.5rem 0rem;
+  }
+.сроктехт,.сроктехт1 {
+    font-size: 12px;
+    color:rgb(94, 92, 92);
+    font-weight: 400;
+    border:1px solid rgb(150, 155, 150);
+    height:1.5rem;
+    border-radius:4px;
+    width:10rem;
+}
+.месяцах,.месяцах1{
+    font-size: 13px;
+    color:rgb(94, 92, 92);
+    font-weight: 400;
+    border:1px solid rgb(150, 155, 150);
+    border-radius:4px;
+    width:5rem;
+    height:1.5rem;
+}
+.Отправить{
+    font-size: 17px;
+    color:rgb(58, 58, 58);
+    border:12px solid rgb(255, 255, 255);
+    padding:4px;
+    margin-left:1rem;
+}
+.Отправить:hover{
+ background-color:rgb(1, 141, 1);
+ border-radius:15px;
+ color:white; 
+ width:120px;
+}
