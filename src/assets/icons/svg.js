@@ -10,9 +10,11 @@ export const Avatar = () => (
     </svg>
 );
 
+//"76"
+//67
 
-export const ProfilePhoto = () => (
-    <svg width="67" height="76" viewBox="0 0 47 56">
+export const ProfilePhoto = ({width, height}) => (
+    <svg width={width} height={height} viewBox="0 0 47 56">
         <g id="Group_2145" data-name="Group 2145">
             <path
                 fillRule="evenodd"
