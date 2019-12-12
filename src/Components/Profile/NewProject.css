@@ -106,6 +106,7 @@
     border: 1px solid #04bf10;
     width: 30px;
     height: 29px;
+    padding-bottom: .1rem;
 }
 
 .save-project {
@@ -123,4 +124,16 @@
     margin-left: 4rem;
     margin-top: 0.3rem;
     cursor: pointer;
+}
+
+.back-profile {
+    border: 1px solid #5ea6fc;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5ea6fc;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
 }

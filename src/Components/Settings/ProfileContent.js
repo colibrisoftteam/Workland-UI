@@ -12,7 +12,7 @@ const ProfileContent = () => {
             <h5 style={{marginLeft: "2.5rem", marginTop: "1rem"}}>Profile Photo</h5>
             <div className="profile-photo">
                 <div className="photo">
-                    <ProfilePhoto width={"67"} height={"76"}/>
+                    <ProfilePhoto width={"67px"} height={"76px"}/>
                 </div>
                 <div className="photo-edit">
                     <div>

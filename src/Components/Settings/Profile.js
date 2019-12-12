@@ -1,11 +1,11 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState} from 'react';
 import ProfileContent from './ProfileContent';
 import AboutSettings from "./AboutSettings";
 import ProfileSecurity from "./ProfileSecurity";
 import ProfileSkills from "./ProfileSkills";
 import ProfilePayment from "./ProfilePayment";
 import DeleteAccount from "./DeleteAccount";
-import Portfolio from "../Profile/Portfolio/Portfolio";
+import Portfolio from "../Profile/Portfolio";
 import {Switch, Route} from "react-router-dom";
 import "./Profile.css"
 
@@ -14,7 +14,6 @@ const Profile = (props) => {
 
     function routeSettings (route){
         props.history.push(`/settings/${route}`);
-
         setRoute(route);
     }
 

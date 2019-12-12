@@ -1,0 +1,37 @@
+.back-ref {
+    border: 1px solid #5ea6fc;
+    color: #ffffff;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #5ea6fc;
+    width: 200px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.add-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.add-title {
+    font-weight: 600;
+    color: #ffffff;
+    margin-top: .7rem;
+}
+
+.portfolio-project {
+    height: 180px;
+    width: 23%;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+}
+
+
+.description {
+    margin-top: .6rem;
+    display: flex;
+    justify-content: flex-start;
+}
