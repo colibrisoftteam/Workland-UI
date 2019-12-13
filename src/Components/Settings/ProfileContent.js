@@ -1,6 +1,6 @@
 import React from 'react';
 import "./ProfileContent.css";
-import {ProfilePhoto, Edit, Remove, Stars} from '../../assets/icons/svg';
+import {ProfilePhoto, Edit, Remove} from '../../assets/icons/svg';
 
 
 
@@ -90,9 +90,6 @@ const ProfileContent = () => {
                         name="saveButton"
                     >Save</button>
                 </div>
-            </div>
-            <div>
-                <Stars/>
             </div>
         </div>
     );

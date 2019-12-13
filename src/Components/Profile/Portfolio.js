@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {ProfilePhoto} from "../../assets/icons/svg";
+import {ProfilePhoto, Stars} from "../../assets/icons/svg";
 import work1 from "../../assets/images/Profile Images/work_1.jpg";
 import work3 from "../../assets/images/Profile Images/work_3.jpg";
 import work4 from "../../assets/images/Profile Images/work_4.jpg";
@@ -24,13 +24,61 @@ const Portfolio = (props) => {
         setWatch(arg);
     }
 
+    const pushToSetting = (route) => {
+        props.history.push(`/${route}`);
+    }
+
     return (
         <div className="container">
             <div className="row justify-content-lg-center">
                 <div className="col-lg-8">
-                    <div className="portfolio-container">
-                        <div className="photo">
-                            <ProfilePhoto width={"67px"} height={"76px"}/>
+                    <div className="user-container">
+                        <div style={{width: "20%"}}>
+                            <div className="user-photo">
+                                <ProfilePhoto width={"67px"} height={"76px"}/>
+                            </div>
+                        </div>
+                        <div className="user-details">
+                            <div className="user-name">
+                                <span>John Doe</span>
+                                <br/>
+                                <span className="userName">@JohnTravolta</span>
+                                <div className="reviews-rating">
+                                    <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                    <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                    <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                    <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                    <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                </div>
+                            </div>
+                            <div className="brief-content">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                Dolores est, facere nisi nobis nostrum tempora voluptatibus!
+                                Accusantium assumenda at beatae consequuntur cumque deserunt,
+                            </div>
+                            <div className="additional-info">
+                                <div className="user-references">
+                                    <div>Telephone:  +998991234455</div>
+                                    <div>Email:  john1998@gmail.com</div>
+                                </div>
+                                <div>Skills:</div>
+                                <div className="user-skills">
+                                    <div className="user-skill">
+                                        Web Programming
+                                    </div>
+                                    <div className="user-skill">
+                                       Mobile Applications
+                                    </div>
+                                    <div className="user-skill">
+                                        Web Design
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="edit-profile">
+                                <button
+                                    onClick={() => pushToSetting("settings/profile")}
+                                    className="edit-user-details">Edit</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -202,6 +250,146 @@ const Portfolio = (props) => {
                         </div>
                         <div className="more-projects">
                                 <span>More</span>
+                        </div>
+                    </div>
+                    <div className="portfolio-container">
+                        <div className="portfolio-header">
+                            <h3>Reviews</h3>
+                        </div>
+                        <div className="reviews-container">
+                            <div className="reviews">
+                                <div className="reviews-header">
+                                    <div className="reviews-title">
+                                        <span className="reviews-title">Make a web-site</span>
+                                        <div className="reviews-rating">
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                        </div>
+                                    </div>
+                                    <div className="reviews-date">
+                                        Today at 16:21
+                                    </div>
+                                </div>
+                                <br/>
+                                <div className="reviews-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Alias at beatae corporis inventore, nulla repellat sit temporibus.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                </div>
+                            </div>
+                            <div className="reviews">
+                                <div className="reviews-header">
+                                    <div className="reviews-title">
+                                        <span className="reviews-title">Make a web-site</span>
+                                        <div className="reviews-rating">
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                        </div>
+                                    </div>
+                                    <div className="reviews-date">
+                                        Today at 16:21
+                                    </div>
+                                </div>
+                                <br/>
+                                <div className="reviews-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Alias at beatae corporis inventore, nulla repellat sit temporibus.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                </div>
+                            </div>
+                            <div className="reviews">
+                                <div className="reviews-header">
+                                    <div className="reviews-title">
+                                        <span className="reviews-title">Make a web-site</span>
+                                        <div className="reviews-rating">
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                        </div>
+                                    </div>
+                                    <div className="reviews-date">
+                                        Today at 16:21
+                                    </div>
+                                </div>
+                                <br/>
+                                <div className="reviews-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Alias at beatae corporis inventore, nulla repellat sit temporibus.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                </div>
+                            </div>
+                            <div className="reviews">
+                                <div className="reviews-header">
+                                    <div className="reviews-title">
+                                        <span className="reviews-title">Make a web-site</span>
+                                        <div className="reviews-rating">
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                        </div>
+                                    </div>
+                                    <div className="reviews-date">
+                                        Today at 16:21
+                                    </div>
+                                </div>
+                                <br/>
+                                <div className="reviews-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Alias at beatae corporis inventore, nulla repellat sit temporibus.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                </div>
+                            </div>
+                            <div className="reviews">
+                                <div className="reviews-header">
+                                    <div className="reviews-title">
+                                        <span className="reviews-title">Make a web-site</span>
+                                        <div className="reviews-rating">
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                            <Stars width={"20px"} height={"20px"} color="#F7993A"/>
+                                        </div>
+                                    </div>
+                                    <div className="reviews-date">
+                                        Today at 16:21
+                                    </div>
+                                </div>
+                                <br/>
+                                <div className="reviews-body">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                    Alias at beatae corporis inventore, nulla repellat sit temporibus.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                    Ab accusamus alias amet blanditiis dignissimos, dolorem inventore nihil,
+                                    odio perferendis quas sapiente.
+                                </div>
+                            </div>
+                            <div className="more-projects">
+                                More
+                            </div>
                         </div>
                     </div>
                 </div>

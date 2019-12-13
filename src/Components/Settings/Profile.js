@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import {Switch, Route} from "react-router-dom";
 import ProfileContent from './ProfileContent';
 import AboutSettings from "./AboutSettings";
 import ProfileSecurity from "./ProfileSecurity";
@@ -6,7 +7,6 @@ import ProfileSkills from "./ProfileSkills";
 import ProfilePayment from "./ProfilePayment";
 import DeleteAccount from "./DeleteAccount";
 import Portfolio from "../Profile/Portfolio";
-import {Switch, Route} from "react-router-dom";
 import "./Profile.css"
 
 const Profile = (props) => {
