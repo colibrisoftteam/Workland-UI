@@ -12,7 +12,10 @@ import SignIn from "./Components/auth/signin/SignIn";
 import SignUp from "./Components/auth/signup/SignUp";
 import SignUpVer from "./Components/auth/signup/SignUpVer";
 import SignUpComplete from "./Components/auth/signup/SignUpComplete";
-import AboutSettings from "./Components/Settings/AboutSettings";
+import Portfolio from "./Components/Profile/Portfolio";
+import PortfolioProjects from "./Components/Profile/Portfolio-Projects";
+import NewProject from "./Components/Profile/NewProject";
+import Project1 from "./Components/Profile/Project1";
 import ProfilePayment from "./Components/Settings/ProfilePayment";
 import Help from "./Components/Help/Help";
 
@@ -32,10 +35,13 @@ class App extends Component {
                     <Route path={'/dashboard/give_order'} component={GiveOrder}/>
                     <Route path={'/dashboard/projects'} component={MyProjects}/>
                     <Route path={'/dashboard/chat'} component={Chat}/>
-                    <Route path={'/profile'} component={AboutSettings}/>
+                    <Route path={'/profile'} component={Portfolio}/>
                     <Route path={'/settings'} component={Profile}/>
                     <Route path={'/payment'} component={ProfilePayment}/>
                     <Route path={'/help'} component={Help}/>
+                    <Route path={'/edit'} component={PortfolioProjects}/>
+                    <Route path={'/new'} component={NewProject}/>
+                    <Route path={'/project'} component={Project1}/>
                 </Switch>
             </div>
         );
