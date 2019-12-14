@@ -28,12 +28,12 @@ const TaskCard = () => {
                         <h5 className="name">John Doe</h5>
                         <h6 className="name2">@John Travolta</h6>
                         <div className="rating">
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <span className="starnumber"> 5.0 (5 отзывов)</span>
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <h4 className="starnumber"> 5.0 (5 отзывов)</h4>
                         </div>
                     </div>
                 </div>
@@ -56,12 +56,12 @@ const TaskCard = () => {
                         <h5 className="name">John Doe</h5>
                         <h6 className="name2">@John Travolta</h6>
                         <div className="rating">
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <span className="starnumber"> 5.0 (5 отзывов)</span>
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <h4 className="starnumber"> 5.0 (5 отзывов)</h4>
                         </div>
                     </div>
                 </div>
@@ -84,12 +84,12 @@ const TaskCard = () => {
                         <h5 className="name">John Doe</h5>
                         <h6 className="name2">@John Travolta</h6>
                         <div className="rating">
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <span className="starnumber"> 5.0 (5 отзывов)</span>
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <h4 className="starnumber"> 5.0 (5 отзывов)</h4>
                         </div>
                     </div>
                 </div>
@@ -103,11 +103,11 @@ const TaskCard = () => {
                     </div>
                 </div>
                 <div className="next-page">
-                <a href="#" className="previous"> Previous</a>
-                <a href="#" className="previous"> 1</a>
-                <a href="#" className="previous"> 2</a>
-                <a href="#" className="previous">3</a>
-                <a href="#" className="next">Next </a>
+                    <a href="#" className="previous"> Previous</a>
+                    <a href="#" className="previous"> 1</a>
+                    <a href="#" className="previous"> 2</a>
+                    <a href="#" className="previous">3</a>
+                    <a href="#" className="next">Next </a>
                 </div>
             </div>
         </div>

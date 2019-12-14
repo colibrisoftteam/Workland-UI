@@ -84,17 +84,20 @@
       margin-bottom:1rem;
    }
    
-   .rating {
-       margin-bottom: 10px;
-       width: 200px;
-       cursor: pointer;
+   .viewrating {
+    margin-bottom: 5px;
+    width: 200px;
+    margin-left:0.5rem;
+    display:flex;
    }
    
    
-   .starnumber {
-       font-size: 0.8rem;
-       font-weight: 500;
-       margin-top:0.5rem;
+   .viewstarnumber {
+    font-weight: 500;
+    margin-left:0.5rem;
+    display:flex;
+    font-size:12px;
+    margin-top:0.1rem;
        
    }
    .money {

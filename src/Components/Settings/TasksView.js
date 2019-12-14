@@ -25,13 +25,13 @@ const TasksView = () => {
                     <div className="ratingfrilansers">
                         <h5 className="name">John Doe</h5>
                         <h6 className="name2">@John Travolta</h6>
-                        <div className="rating">
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <Stars />
-                            <span className="starnumber"> 5.0 (5 отзывов)</span>
+                        <div className="viewrating">
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <Stars width={"14px"} height={"14px"} color="#F7993A" />
+                            <h4 className="viewstarnumber"> 5.0 (5 отзывов)</h4>
                         </div>
                     </div>
                 </div>
@@ -57,17 +57,17 @@ const TasksView = () => {
             <div className="form">
                 <h4 className="TaskView-subtitle2">Откликнуться</h4>
                 <div className="описание">
-                        <span>Описание</span>
-                        <textarea
-                            className="бордерописание">
-                        </textarea>
+                    <span>Описание</span>
+                    <textarea
+                        className="бордерописание">
+                    </textarea>
                     <span>Срок</span>
                     <div className="viewcategory2">
-                    <input
-                    className="сроктехт"
-                        
-                        type="text"
-                        
+                        <input
+                            className="сроктехт"
+
+                            type="text"
+
                         />
                         <select className="месяцах" name="month">
                             <option>В месяцах</option>
@@ -79,7 +79,7 @@ const TasksView = () => {
                     <span>Денги</span>
                     <div className="viewcategory3">
                         <input className="сроктехт1"
-                        type="text"
+                            type="text"
                         />
                         <select className="месяцах1" name="month">
                             <option> Sum</option>
