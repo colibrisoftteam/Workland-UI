@@ -1,6 +1,6 @@
 import React from 'react';
 import './TaskCard.css';
-import { ProfPhoto } from '../../assets/icons/svg';
+import { ProfilePhoto } from '../../assets/icons/svg';
 import { Stars } from '../../assets/icons/svg';
 
 
@@ -14,13 +14,15 @@ const TaskCard = () => {
             </div>
             <br />
             <div className="offers">
-                <h4 className="detail">Dетали</h4>
+                <h4 className="detail">Dетали
+                </h4>
+
                 <h4 className="predlojeniya">Предложения</h4>
             </div>
             <div className="border">
                 <div className="profilinfo">
                     <div className="pr-photo">
-                        <ProfPhoto />
+                        <ProfilePhoto width={"56"} height={"66"} />
                     </div>
                     <div className="ratingfrilansers">
                         <h5 className="name">John Doe</h5>
@@ -48,7 +50,7 @@ const TaskCard = () => {
             <div className="border">
                 <div className="profilinfo">
                     <div className="pr-photo">
-                        <ProfPhoto />
+                        <ProfilePhoto width={"56"} height={"66"} />
                     </div>
                     <div className="ratingfrilansers">
                         <h5 className="name">John Doe</h5>
@@ -76,7 +78,7 @@ const TaskCard = () => {
             <div className="border">
                 <div className="profilinfo">
                     <div className="pr-photo">
-                        <ProfPhoto />
+                        <ProfilePhoto width={"56"} height={"66"} />
                     </div>
                     <div className="ratingfrilansers">
                         <h5 className="name">John Doe</h5>
@@ -99,6 +101,13 @@ const TaskCard = () => {
                         <h4 className="detail3">Отправить сообщение</h4>
                         <h4 className="detail4">Отказать</h4>
                     </div>
+                </div>
+                <div className="next-page">
+                <a href="#" className="previous"> Previous</a>
+                <a href="#" className="previous"> 1</a>
+                <a href="#" className="previous"> 2</a>
+                <a href="#" className="previous">3</a>
+                <a href="#" className="next">Next </a>
                 </div>
             </div>
         </div>

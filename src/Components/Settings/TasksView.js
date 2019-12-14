@@ -1,6 +1,6 @@
 import React from 'react';
 import './TasksView.css';
-import { ProfPhoto } from '../../assets/icons/svg';
+import { ProfilePhoto } from '../../assets/icons/svg';
 import { Stars } from '../../assets/icons/svg';
 
 
@@ -20,7 +20,7 @@ const TasksView = () => {
             <div className="viewborder">
                 <div className="viewprofilinfo">
                     <div className="pr-photo">
-                        <ProfPhoto />
+                        <ProfilePhoto width={"56"} height={"66"} />
                     </div>
                     <div className="ratingfrilansers">
                         <h5 className="name">John Doe</h5>
@@ -57,28 +57,36 @@ const TasksView = () => {
             <div className="form">
                 <h4 className="TaskView-subtitle2">Откликнуться</h4>
                 <div className="описание">
-                    <h5>Описание</h5>
-                    <div className="бордерописание">
-                    </div>
-                    <h4 className="Срок">Срок</h4>
+                        <span>Описание</span>
+                        <textarea
+                            className="бордерописание">
+                        </textarea>
+                    <span>Срок</span>
                     <div className="viewcategory2">
-                        <h4 className="сроктехт"></h4>
+                    <input
+                    className="сроктехт"
+                        
+                        type="text"
+                        
+                        />
                         <select className="месяцах" name="month">
-                        <option>В месяцах</option>
-                        <option>April</option>
-                        <option>May</option>
-                        <option>June</option>
-                    </select>
+                            <option>В месяцах</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                        </select>
                     </div>
-                    <h4 className="Денги">Денги</h4>
+                    <span>Денги</span>
                     <div className="viewcategory3">
-                        <h4 className="сроктехт1"></h4>
+                        <input className="сроктехт1"
+                        type="text"
+                        />
                         <select className="месяцах1" name="month">
-                        <option> Sum</option>
-                        <option>April</option>
-                        <option>May</option>
-                        <option>June</option>
-                    </select>
+                            <option> Sum</option>
+                            <option>April</option>
+                            <option>May</option>
+                            <option>June</option>
+                        </select>
                     </div>
                 </div>
             </div>

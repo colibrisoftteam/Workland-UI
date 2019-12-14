@@ -10,9 +10,6 @@ export const Avatar = () => (
     </svg>
 );
 
-//"76"
-//67
-
 export const ProfilePhoto = ({width, height}) => (
     <svg width={width} height={height} viewBox="0 0 47 56">
         <g id="Group_2145" data-name="Group 2145">

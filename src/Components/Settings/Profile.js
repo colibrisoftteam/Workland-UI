@@ -5,7 +5,8 @@ import ProfileSecurity from "./ProfileSecurity";
 import ProfileSkills from "./ProfileSkills";
 import ProfilePayment from "./ProfilePayment";
 import TaskCard from "./TaskCard";
-import TasksView from "./TasksView"
+import TasksView from "./TasksView";
+import Task from "./Task";
 import DeleteAccount from "./DeleteAccount";
 import Portfolio from "../Profile/Portfolio/Portfolio";
 import { Switch, Route } from "react-router-dom";
@@ -60,9 +61,9 @@ const Profile = (props) => {
                             </button>
                         </div>
 
-                        <div onClick={() => routeSettings("task")}>
+                        <div onClick={() => routeSettings("taskcard")}>
                             <button
-                                className={`${active === "task" ? "active-setting" : "nonactive-setting"}`}>
+                                className={`${active === "taskcard" ? "active-setting" : "nonactive-setting"}`}>
                                 Task Card
                             </button>
                         </div>
@@ -70,6 +71,12 @@ const Profile = (props) => {
                             <button
                                 className={`${active === "tasksview" ? "active-setting" : "nonactive-setting"}`}>
                                 Tasks View
+                            </button>
+                        </div>
+                        <div onClick={() => routeSettings("task")}>
+                            <button
+                                className={`${active === "task" ? "active-setting" : "nonactive-setting"}`}>
+                                Task
                             </button>
                         </div>
 
@@ -91,8 +98,9 @@ const Profile = (props) => {
                             <Route path={'/settings/skills'} component={ProfileSkills} />
                             <Route path={'/settings/payment'} component={ProfilePayment} />
                             <Route path={'/settings/portfolio'} component={Portfolio} />
-                            <Route path={'/settings/task'} component={TaskCard} />
+                            <Route path={'/settings/taskcard'} component={TaskCard} />
                             <Route path={'/settings/tasksview'} component={TasksView} />
+                            <Route path={'/settings/task'} component={Task} />
                             <Route path={'/settings/delete'} component={DeleteAccount} />
                         </Switch>
                     </div>
