@@ -1,0 +1,72 @@
+.projectContainer {
+    margin-top: 4rem;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    border-radius: 2px;
+    border: 1px solid #d7d6d6;
+    box-shadow: 0px 1px 8px 0px #d7d6d6;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.projectHeader {
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #b8b7b7;
+    padding-bottom: 1rem;
+}
+
+.projectTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.previousButton {
+    cursor: pointer;
+}
+
+.nextButton {
+    cursor: pointer;
+}
+.about {
+    margin-bottom: 2rem;
+}
+
+.aboutProject {
+    margin-top: 1rem;
+    line-height: 1.3;
+}
+
+.projectSkill {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.freelanceSkill {
+    border: 1px solid #5ea6fc;
+    border-radius: 5px;
+    color: #ffffff;
+    background-color: #5ea6fc;
+    height: 30px;
+    padding-left: .7rem;
+    padding-top: .1rem;
+    padding-right: .7rem;
+    margin-right: 1rem;
+}
+
+.projectFiles {
+    display: flex;
+    align-items: flex-start;
+    margin-top: 1rem;
+}
+
+.projectImage {
+    margin-right: 1.5rem;
+    width: 20%;
+}

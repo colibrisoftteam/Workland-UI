@@ -57,17 +57,15 @@ export const Remove = () => (
 
     </svg>
 )
-export const Stars = () => (
-    <svg width="14px"  height="14px" viewBox="0 0 501.28 501.28" >
+
+export const Stars = ({width, height, color}) => (
+    <svg width={width}  height={height} viewBox="0 0 53.867 53.867" >
+
         <g>
           <polygon
-          fill="#FFCD00"
-          points="501.28,194.37 335.26,159.33 250.64,12.27 250.64,419.77 405.54,489.01 387.56,320.29  "
+          fill={color}
+          points="26.934,1.318 35.256,18.182 53.867,20.887 40.4,34.013 43.579,52.549 26.934,43.798   10.288,52.549 13.467,34.013 0,20.887 18.611,18.182 "
           ></polygon>
-        <polygon
-            fill="#FFDA44"
-            points="166.02,159.33 0,194.37 113.72,320.29 95.74,489.01 250.64,419.77 250.64,12.27  "
-        ></polygon>
         </g>
     </svg>
 )

@@ -1,4 +1,7 @@
-import React, { useState, useEffect } from 'react';
+
+import React, {useState} from 'react';
+import {Switch, Route} from "react-router-dom";
+
 import ProfileContent from './ProfileContent';
 import AboutSettings from "./AboutSettings";
 import ProfileSecurity from "./ProfileSecurity";
@@ -8,8 +11,9 @@ import TaskCard from "./TaskCard";
 import TasksView from "./TasksView";
 import Task from "./Task";
 import DeleteAccount from "./DeleteAccount";
-import Portfolio from "../Profile/Portfolio/Portfolio";
-import { Switch, Route } from "react-router-dom";
+
+import Portfolio from "../Profile/Portfolio";
+
 import "./Profile.css"
 
 const Profile = (props) => {
@@ -17,7 +21,6 @@ const Profile = (props) => {
 
     function routeSettings(route) {
         props.history.push(`/settings/${route}`);
-
         setRoute(route);
     }
 
