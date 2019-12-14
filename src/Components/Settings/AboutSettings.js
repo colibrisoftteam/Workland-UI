@@ -28,10 +28,16 @@ const AboutSettings = () => {
             <span className="gender-title">Gender</span>
             <div className="gender-form">
                 <div style={{cursor: "pointer"}}>
-                    <input type="radio" value="male" /> Male
+                    <input
+                        type="checkbox"
+                        className="check-input"
+                        value="male"/> Male
                 </div>
                 <div style={{cursor: "pointer"}}>
-                    <input type="radio" value="female"/> Female
+                    <input
+                        type="checkbox"
+                        className="check-input"
+                        value="female"/> Female
                 </div>
             </div>
 

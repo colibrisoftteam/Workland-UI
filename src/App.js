@@ -17,6 +17,7 @@ import Help from "./Components/Help/Help";
 import Portfolio from "./Components/Profile/Portfolio";
 import PortfolioProjects from "./Components/Profile/Portfolio-Projects";
 import NewProject from "./Components/Profile/NewProject";
+import Project1 from "./Components/Profile/Project1";
 
 
 class App extends Component {
@@ -40,6 +41,7 @@ class App extends Component {
                     <Route path={'/help'} component={Help}/>
                     <Route path={'/edit'} component={PortfolioProjects}/>
                     <Route path={'/new'} component={NewProject}/>
+                    <Route path={'/project'} component={Project1}/>
                 </Switch>
             </div>
         );

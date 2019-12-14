@@ -28,6 +28,10 @@ const Portfolio = (props) => {
         props.history.push(`/${route}`);
     }
 
+    const pushToProject = (route) => {
+        props.history.push(`/${route}`);
+    }
+
     return (
         <div className="container">
             <div className="row justify-content-lg-center">
@@ -102,7 +106,9 @@ const Portfolio = (props) => {
                                 <div  className="edit-delete">
                                     <span>Edit | </span><span>Delete</span>
                                 </div>
-                                <div className="img-container">
+                                <div
+                                    onClick={() => pushToProject("project")}
+                                    className="img-container">
                                     <img className="project-image" alt="work1" src={work1}/>
                                     {watch === 1 ?  <div className="watch-project">
                                         <span>Watch it</span>
